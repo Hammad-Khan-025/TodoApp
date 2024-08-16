@@ -28,8 +28,13 @@ export default function TodoList({ todos, deleteTodo, startEditTodo }) {
   return (
     <div>
       {todos.map(todo => (
-        <div key={todo.id} className='flex justify-between items-center my-5 bg-gray-200 px-5 py-3 gap-5 rounded'>
-          <p className='tracking-wider font-semibold w-full sm:w-80 break-words'>{todo.text}</p>
+        <div 
+          key={todo.id} 
+          className='flex justify-between items-center my-5 bg-gray-200 px-5 py-3 gap-5 rounded w-full'
+        >
+          <p className='tracking-wider font-semibold break-words overflow-hidden'>
+            {todo.text}
+          </p>
           <div className='flex gap-5'>
             <FontAwesomeIcon
               icon={faEdit}

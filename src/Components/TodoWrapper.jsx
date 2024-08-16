@@ -53,7 +53,7 @@ export default function TodoWrapper() {
     <>
     <div className="bg-gradient-to-br from-rose-200 via-rose-400 to-rose-200 min-h-screen">
       <div className="flex justify-center sm:items-center px-3 py-10">
-        <div className="shadow-2xl rounded-xl p-5 sm:p-10 w-[550px] bg-white">
+        <div className="shadow-2xl rounded-xl p-5 sm:p-10 w-full sm:w-[550px] bg-white">
           <h1 className="text-2xl md:text-3xl text-gray-900 font-bold tracking-widest text-center pb-10 uppercase">
             Todo App
           </h1>
